@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe: Client Tracking</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background-color: #f5f5f5; }
+        .wireframe-container { display: flex; height: 100vh; }
+        .main-content { flex-grow: 1; padding: 20px; }
+        .notes-column { width: 300px; background-color: #e0e0e0; padding: 20px; border-left: 2px solid #ccc; }
+        .header { background-color: #333; color: white; text-align: center; padding: 15px; font-size: 1.2em; }
+        .box { border: 2px dashed #666; background-color: #f9f9f9; text-align: center; color: #666; }
+        .map-view { height: 500px; line-height: 500px; font-size: 2em; margin-bottom: 20px; }
+        .status-panel { border: 1px solid #ccc; padding: 20px; background-color: #fff; text-align: center; }
+        .status-panel h3 { margin-top: 0; }
+        .eta { font-size: 1.5em; font-weight: bold; color: #0056b3; }
+        h2, h3 { color: #333; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <div class="main-content">
+            <div class="header">Client Tracking View</div>
+            <div class="box map-view">[MAP SHOWING GROOMER & HOUSE]</div>
+            <div class="status-panel">
+                <h3>Your groomer is on the way!</h3>
+                <p>Estimated Arrival:</p>
+                <div class="eta">[ 12 MINUTES ]</div>
+            </div>
+        </div>
+        <div class="notes-column">
+            <h2>Notes</h2>
+            <h3>Screen: Client Tracking</h3>
+            <p>This is the simple web view the client sees after clicking the tracking link.</p>
+            <ul>
+                <li>The primary element is a map.</li>
+                <li>The map shows the client's home location and the groomer's current location.</li>
+                <li>An icon for the groomer would move along a projected route.</li>
+                <li>Below the map, a simple panel shows the groomer's status and a calculated ETA.</li>
+                <li>This page requires no interaction from the client. It's for viewing only.</li>
+                <li>When the groomer arrives, the status and ETA would update to "Your groomer has arrived!".</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
