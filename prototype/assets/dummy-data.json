@@ -1,0 +1,50 @@
+{
+  "groomer": {
+    "startLocation": { "lat": 34.0522, "lon": -118.2437 },
+    "currentLocation": { "lat": 34.0522, "lon": -118.2437 },
+    "status": "Idle",
+    "activeAppointmentId": null
+  },
+  "appointments": [
+    {
+      "id": 1,
+      "clientName": "Sarah Connor",
+      "address": "123 Cyberdyne Place",
+      "dogName": "Terminator",
+      "service": "Full Groom",
+      "time": "09:00 AM",
+      "location": { "lat": 34.08, "lon": -118.30 },
+      "status": "Pending"
+    },
+    {
+      "id": 2,
+      "clientName": "John Wick",
+      "address": "456 Continental Ave",
+      "dogName": "Beagle",
+      "service": "Bath & Tidy",
+      "time": "11:00 AM",
+      "location": { "lat": 34.03, "lon": -118.35 },
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "clientName": "Ellen Ripley",
+      "address": "789 Nostromo Ln",
+      "dogName": "Jonesy",
+      "service": "Nail Trim",
+      "time": "01:30 PM",
+      "location": { "lat": 34.09, "lon": -118.22 },
+      "status": "Pending"
+    },
+    {
+      "id": 4,
+      "clientName": "Peter Venkman",
+      "address": "101 Firehouse Rd",
+      "dogName": "Slimer",
+      "service": "De-Shedding",
+      "time": "03:00 PM",
+      "location": { "lat": 34.01, "lon": -118.28 },
+      "status": "Pending"
+    }
+  ]
+}
