@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>GroomerGo Prototype</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <div class="phone-wrapper">
+        <div class="app-screen">
+            <div class="view-toggle">
+                <button id="groomerToggle" class="toggle-btn active">Groomer View</button>
+                <button id="clientToggle" class="toggle-btn">Client View</button>
+            </div>
+
+            <!-- Groomer View -->
+            <div id="groomerView" class="view active">
+                <div id="map-container">
+                    <!-- Map pins will be injected here by JS -->
+                </div>
+                <div id="appointment-list">
+                    <!-- Appointment cards will be injected here by JS -->
+                </div>
+            </div>
+
+            <!-- Client View -->
+            <div id="clientView" class="view">
+                <div id="client-map-container">
+                    <!-- Client map icons will be injected here by JS -->
+                </div>
+                <div id="client-status-area">
+                    <h2>Waiting for Groomer</h2>
+                    <p>Select an appointment in the Groomer View and click "Start Travel" to begin tracking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/app.js"></script>
+</body>
+</html>
