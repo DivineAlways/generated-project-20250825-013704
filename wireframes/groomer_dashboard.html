@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe: Groomer Dashboard</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background-color: #f5f5f5; }
+        .wireframe-container { display: flex; height: 100vh; }
+        .main-content { flex-grow: 1; padding: 20px; }
+        .notes-column { width: 300px; background-color: #e0e0e0; padding: 20px; border-left: 2px solid #ccc; }
+        .header { background-color: #333; color: white; text-align: center; padding: 15px; font-size: 1.2em; }
+        .box { border: 2px dashed #666; background-color: #f9f9f9; text-align: center; color: #666; }
+        .map-view { height: 400px; line-height: 400px; font-size: 2em; margin-bottom: 20px; }
+        .appointment-list .item { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; background-color: #fff; }
+        .item.selected { border: 2px solid #0056b3; }
+        .action-button { background-color: #ccc; border: 2px solid #666; padding: 15px; text-align: center; margin-top: 10px; font-weight: bold; }
+        h2, h3 { color: #333; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <div class="main-content">
+            <div class="header">Groomer Dashboard View</div>
+            <div class="box map-view">[MAP INTERFACE]</div>
+            <h3>Today's Appointments</h3>
+            <div class="appointment-list">
+                <div class="item">
+                    <b>10:00 AM</b> - Jane Doe <br>
+                    <small>123 Maple St</small>
+                </div>
+                <div class="item selected">
+                    <b>12:30 PM</b> - John Smith <br>
+                    <small>456 Oak Ave</small>
+                    <div class="action-button">[ START TRAVEL ]</div>
+                </div>
+                <div class="item">
+                    <b>02:00 PM</b> - Emily White <br>
+                    <small>789 Pine Ln</small>
+                </div>
+            </div>
+        </div>
+        <div class="notes-column">
+            <h2>Notes</h2>
+            <h3>Screen: Groomer Dashboard</h3>
+            <p>This is the groomer's main screen.</p>
+            <ul>
+                <li>The top section is a map showing pins for each appointment.</li>
+                <li>The bottom section is a scrollable list of appointments for the day.</li>
+                <li>Tapping an appointment in the list highlights it (as shown with "John Smith").</li>
+                <li>When an appointment is selected, it's also highlighted on the map.</li>
+                <li>A primary action button appears for the selected, upcoming appointment (e.g., "Start Travel").</li>
+                <li>Past appointments would be grayed out.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
