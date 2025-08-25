@@ -1,0 +1,197 @@
+:root {
+    --bg-dark-purple: #2C2A4A;
+    --primary-purple: #4F4789;
+    --accent-yellow: #FFC857;
+    --light-text: #F4F4F9;
+    --dark-text: #1B263B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark-purple);
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.phone-wrapper {
+    width: 100%;
+    max-width: 400px;
+    height: 800px;
+    background-color: #1a1a1a;
+    border-radius: 40px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 5px #000;
+    overflow: hidden;
+}
+
+.app-screen {
+    background-color: var(--bg-dark-purple);
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.view-toggle {
+    display: flex;
+    background-color: var(--primary-purple);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: var(--light-text);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn.active {
+    background-color: var(--accent-yellow);
+    color: var(--dark-text);
+}
+
+.view {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.view.active {
+    display: flex;
+}
+
+/* Groomer View Styles */
+#map-container {
+    height: 40%;
+    background-color: #252341;
+    margin: 0 10px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--primary-purple);
+}
+
+.map-pin {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent-yellow);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    border: 2px solid var(--dark-text);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.map-pin:hover {
+    transform: rotate(-45deg) scale(1.2);
+}
+.map-pin.selected {
+    background-color: #ff6347;
+    transform: rotate(-45deg) scale(1.3);
+}
+
+#appointment-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.appointment-card {
+    background-color: var(--primary-purple);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-left: 5px solid transparent;
+    transition: background-color 0.2s, border-left-color 0.2s;
+}
+.appointment-card:hover {
+    background-color: #5a519d;
+}
+.appointment-card.selected {
+    background-color: #5a519d;
+    border-left-color: var(--accent-yellow);
+}
+.appointment-card h3 {
+    color: var(--accent-yellow);
+    margin-bottom: 5px;
+}
+.appointment-card p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.action-button {
+    background-color: var(--accent-yellow);
+    color: var(--dark-text);
+    border: none;
+    padding: 12px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.action-button:hover {
+    background-color: #ffdb8a;
+}
+.action-button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+/* Client View Styles */
+#client-map-container {
+    flex-grow: 1;
+    background-color: #252341;
+    margin: 10px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--primary-purple);
+}
+.client-map-icon {
+    position: absolute;
+    font-size: 2em;
+}
+#groomer-icon {
+    color: var(--accent-yellow);
+    transition: top 1s linear, left 1s linear;
+}
+#home-icon {
+    color: #ff6347;
+}
+
+#client-status-area {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--primary-purple);
+    border-top: 2px solid var(--accent-yellow);
+}
+
+#client-status-area h2 {
+    color: var(--accent-yellow);
+    margin-bottom: 10px;
+}
